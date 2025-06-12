@@ -2743,7 +2743,6 @@
             </div>
         </div>
     </footer>
-
     <script>
         // Language switching functionality
         function switchLanguage(lang) {
@@ -2996,6 +2995,107 @@
 
             // Initialize language to English by default
             switchLanguage('en');
+        });
+    </script>
+    <!-- PWA安装提示 - 添加到</script>后面，</body>前面 -->
+    <div id="pwa-install-banner" style="
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        z-index: 9999;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        animation: pulse 2s infinite;
+        display: none;
+    ">
+        📱 安装SmartFlow AI App
+    </div>
+
+    <style>
+        @keyframes pulse {
+            0% { transform: translateX(-50%) scale(1); }
+            50% { transform: translateX(-50%) scale(1.05); }
+            100% { transform: translateX(-50%) scale(1); }
+        }
+    </style>
+
+    <script>
+        // PWA安装功能
+        let deferredPrompt;
+        const installBanner = document.getElementById('pwa-install-banner');
+
+        // 显示安装横幅
+        function showInstallBanner() {
+            if (installBanner) {
+                installBanner.style.display = 'block';
+            }
+        }
+
+        // 隐藏安装横幅
+        function hideInstallBanner() {
+            if (installBanner) {
+                installBanner.style.display = 'none';
+            }
+        }
+
+        // 安装应用
+        async function installPWA() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                console.log('用户选择:', outcome);
+                deferredPrompt = null;
+                hideInstallBanner();
+            } else {
+                // 显示手动安装说明
+                alert(`📱 手动安装SmartFlow AI：
+
+Chrome浏览器：
+• 点击地址栏右侧的"安装"图标
+• 或菜单 → "安装SmartFlow AI"
+
+手机Safari：
+• 点击分享按钮 📤
+• 选择"添加到主屏幕"
+
+安装后就像真正的App一样！`);
+            }
+        }
+
+        // 监听安装提示
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            showInstallBanner();
+        });
+
+        // 监听安装完成
+        window.addEventListener('appinstalled', () => {
+            hideInstallBanner();
+            deferredPrompt = null;
+        });
+
+        // 点击安装
+        if (installBanner) {
+            installBanner.addEventListener('click', installPWA);
+        }
+
+        // 页面加载后显示安装提示
+        window.addEventListener('load', () => {
+            // 检查是否已经是PWA模式
+            const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+            if (!isStandalone) {
+                // 3秒后显示安装提示
+                setTimeout(showInstallBanner, 3000);
+            }
         });
     </script>
 </body>
