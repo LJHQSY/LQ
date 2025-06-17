@@ -5,34 +5,35 @@
   "theme_color": "#667eea",
   "background_color": "#667eea",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
   "orientation": "portrait-primary",
   "scope": "./",
   "start_url": "./",
   "categories": ["business", "productivity", "utilities"],
   "lang": "en-MY",
   "dir": "ltr",
-  "id": "com.megaminds.smartflowai", 
+  "id": "com.megaminds.smartflowai",
   "icons": [
     {
-      "src": "icons/icon-192x192.png",
+      "src": "https://ljhqsy.github.io/LQ/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-192x192.png",
+      "src": "https://ljhqsy.github.io/LQ/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "icons/icon-512x512.png",
+      "src": "https://ljhqsy.github.io/LQ/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-512x512.png",
+      "src": "https://ljhqsy.github.io/LQ/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -55,16 +56,22 @@
   "launch_handler": {
     "client_mode": "navigate-existing"
   },
-  "screenshots": [
+  "file_handlers": [
     {
-      "src": "https://ljhqsy.github.io/LQ/screenshot1.png",
-      "type": "image/png",
-      "sizes": "800x600"
-    },
-    {
-      "src": "https://ljhqsy.github.io/LQ/screenshot2.png",
-      "type": "image/png",
-      "sizes": "800x600"
+      "action": "/",
+      "accept": {
+        "application/pdf": [".pdf"],
+        "image/*": [".png", ".jpg", ".jpeg"]
+      }
     }
-  ]
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+smartflow",
+      "url": "/#handler?url=%s"
+    }
+  ],
+  "handle_links": {
+    "urls": ["https://ljhqsy.github.io/LQ/*"]
+  }
 }
