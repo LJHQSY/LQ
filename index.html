@@ -1679,6 +1679,26 @@
             display: block;
         }
     </style>
+    <!-- 🔽 PWA 配置开始 -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#667eea">
+
+<!-- iOS 图标支持 -->
+<link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
+<link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512x512.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- 注册 Service Worker -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('Service Worker 注册成功:', reg))
+        .catch(err => console.log('Service Worker 注册失败:', err));
+    });
+  }
+</script>
+<!-- 🔼 PWA 配置结束 -->
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
