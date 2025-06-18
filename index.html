@@ -3124,7 +3124,79 @@
 <span class="lang-content" data-lang="zh">10+年汽车制造经验，三语商业专家，家族企业转型专家，具有深厚的中小企业洞察力和政府关系经验。</span>
 <span class="lang-content" data-lang="ms">10+ tahun pengalaman pembuatan automotif, pakar perniagaan tiga bahasa, pakar transformasi perniagaan keluarga dengan wawasan IKS yang mendalam dan pengalaman hubungan kerajaan.</span>
 </p>
-<div class="team-contact">
+<!-- ==================== ⑤ 小型FAQ问答区 ==================== -->
+<style>
+/* ⑤ 小型FAQ样式 */
+.mini-faq-section {
+    background: white;
+    padding: 60px 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.mini-faq-title {
+    text-align: center;
+    color: #1f2937;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.mini-faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mini-faq-item {
+    background: linear-gradient(135deg, #f8fafc, #ffffff);
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.mini-faq-item:hover {
+    transform: translateY(-5px);
+    border-color: #667eea;
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.1);
+}
+
+.faq-question-mini {
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.faq-answer-mini {
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .mini-faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+<script>
+// ⑤ FAQ交互功能
+document.addEventListener('DOMContentLoaded', function() {
+    // 为FAQ项目添加点击效果
+    document.querySelectorAll('.mini-faq-item').forEach(item => {
+        item.addEventListener('click', function() {
+            this.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+        });
+    });
+});
+</script><div class="team-contact">
 <a class="contact-link" href="mailto:ahmad.rahman@megaminds.my">
                             ✉ Email
                         </a>
@@ -3201,7 +3273,477 @@
 </div>
 </div>
 </div>
+</section><section class="app-tabs-section" id="appTabs">
+<div class="container">
+<h2 class="section-title">
+<span class="lang-content active" data-lang="en">🧭 Explore SmartFlow AI</span>
+<span class="lang-content" data-lang="zh">🧭 探索SmartFlow AI</span>
+<span class="lang-content" data-lang="ms">🧭 Terokai SmartFlow AI</span>
+</h2>
+<div class="tab-switcher">
+<button class="tab-btn active" onclick="switchTab('features')">
+<span class="tab-icon">⚡</span>
+<span class="tab-label">
+<span class="lang-content active" data-lang="en">Features</span>
+<span class="lang-content" data-lang="zh">功能</span>
+<span class="lang-content" data-lang="ms">Ciri</span>
+</span>
+</button>
+<button class="tab-btn" onclick="switchTab('roi')">
+<span class="tab-icon">💰</span>
+<span class="tab-label">
+<span class="lang-content active" data-lang="en">ROI Impact</span>
+<span class="lang-content" data-lang="zh">投资回报</span>
+<span class="lang-content" data-lang="ms">Impak ROI</span>
+</span>
+</button>
+<button class="tab-btn" onclick="switchTab('implementation')">
+<span class="tab-icon">🚀</span>
+<span class="tab-label">
+<span class="lang-content active" data-lang="en">Implementation</span>
+<span class="lang-content" data-lang="zh">实施</span>
+<span class="lang-content" data-lang="ms">Pelaksanaan</span>
+</span>
+</button>
+<button class="tab-btn" onclick="switchTab('support')">
+<span class="tab-icon">🛠️</span>
+<span class="tab-label">
+<span class="lang-content active" data-lang="en">Support</span>
+<span class="lang-content" data-lang="zh">支持</span>
+<span class="lang-content" data-lang="ms">Sokongan</span>
+</span>
+</button>
+</div>
+<div class="tab-content-container">
+<div class="tab-content active" id="tab-features">
+<div class="tab-content-grid">
+<div class="content-card">
+<h4>🤖 Cultural Intelligence AI</h4>
+<p>
+<span class="lang-content active" data-lang="en">Trilingual processing with code-switching support for authentic Malaysian workplace communication</span>
+<span class="lang-content" data-lang="zh">支持代码切换的三语处理，适用于真实的马来西亚工作场所沟通</span>
+<span class="lang-content" data-lang="ms">Pemprosesan tiga bahasa dengan sokongan penukaran kod untuk komunikasi tempat kerja Malaysia yang autentik</span>
+</p>
+</div>
+<div class="content-card">
+<h4>📱 Mobile AR Platform</h4>
+<p>
+<span class="lang-content active" data-lang="en">Factory-floor AR interface optimized for intermittent connectivity and real-time collaboration</span>
+<span class="lang-content" data-lang="zh">针对间歇性连接和实时协作优化的工厂级AR界面</span>
+<span class="lang-content" data-lang="ms">Antara muka AR lantai kilang dioptimumkan untuk sambungan berselang dan kerjasama masa nyata</span>
+</p>
+</div>
+</div>
+</div>
+<div class="tab-content" id="tab-roi">
+<div class="roi-showcase">
+<div class="roi-metric">
+<span class="metric-value">83%</span>
+<span class="metric-label">
+<span class="lang-content active" data-lang="en">Cycle Time Reduction</span>
+<span class="lang-content" data-lang="zh">周期时间减少</span>
+<span class="lang-content" data-lang="ms">Pengurangan Masa Kitaran</span>
+</span>
+</div>
+<div class="roi-metric">
+<span class="metric-value">MYR 70K</span>
+<span class="metric-label">
+<span class="lang-content active" data-lang="en">Monthly Savings</span>
+<span class="lang-content" data-lang="zh">月度节省</span>
+<span class="lang-content" data-lang="ms">Penjimatan Bulanan</span>
+</span>
+</div>
+<div class="roi-metric">
+<span class="metric-value">17</span>
+<span class="metric-label">
+<span class="lang-content active" data-lang="en">Months Payback</span>
+<span class="lang-content" data-lang="zh">月回本</span>
+<span class="lang-content" data-lang="ms">Bulan Pulang Modal</span>
+</span>
+</div>
+</div>
+</div>
+<div class="tab-content" id="tab-implementation">
+<div class="implementation-timeline">
+<div class="timeline-step">
+<div class="step-number">1</div>
+<div class="step-content">
+<h5>
+<span class="lang-content active" data-lang="en">Cultural Assessment (8 weeks)</span>
+<span class="lang-content" data-lang="zh">文化评估（8周）</span>
+<span class="lang-content" data-lang="ms">Penilaian Budaya (8 minggu)</span>
+</h5>
+<p>
+<span class="lang-content active" data-lang="en">Stakeholder analysis and cultural intelligence mapping</span>
+<span class="lang-content" data-lang="zh">利益相关者分析和文化智能映射</span>
+<span class="lang-content" data-lang="ms">Analisis pemegang taruhan dan pemetaan kecerdasan budaya</span>
+</p>
+</div>
+</div>
+<div class="timeline-step">
+<div class="step-number">2</div>
+<div class="step-content">
+<h5>
+<span class="lang-content active" data-lang="en">AI Development (12 weeks)</span>
+<span class="lang-content" data-lang="zh">AI开发（12周）</span>
+<span class="lang-content" data-lang="ms">Pembangunan AI (12 minggu)</span>
+</h5>
+<p>
+<span class="lang-content active" data-lang="en">Custom AI system with trilingual processing</span>
+<span class="lang-content" data-lang="zh">具有三语处理功能的定制AI系统</span>
+<span class="lang-content" data-lang="ms">Sistem AI tersuai dengan pemprosesan tiga bahasa</span>
+</p>
+</div>
+</div>
+<div class="timeline-step">
+<div class="step-number">3</div>
+<div class="step-content">
+<h5>
+<span class="lang-content active" data-lang="en">Full Deployment (8 weeks)</span>
+<span class="lang-content" data-lang="zh">完整部署（8周）</span>
+<span class="lang-content" data-lang="ms">Pelaksanaan Penuh (8 minggu)</span>
+</h5>
+<p>
+<span class="lang-content active" data-lang="en">Training, testing, and ongoing support setup</span>
+<span class="lang-content" data-lang="zh">培训、测试和持续支持设置</span>
+<span class="lang-content" data-lang="ms">Latihan, ujian, dan persediaan sokongan berterusan</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-content" id="tab-support">
+<div class="support-options">
+<div class="support-card">
+<h4>🏛️ Government Partnership</h4>
+<p>
+<span class="lang-content active" data-lang="en">Ministry of Digital Malaysia certified with 60-70% funding coverage</span>
+<span class="lang-content" data-lang="zh">马来西亚数字部认证，60-70%资金覆盖</span>
+<span class="lang-content" data-lang="ms">Disahkan Kementerian Digital Malaysia dengan liputan pembiayaan 60-70%</span>
+</p>
+</div>
+<div class="support-card">
+<h4>🔧 24/7 Technical Support</h4>
+<p>
+<span class="lang-content active" data-lang="en">Multilingual support team with cultural sensitivity training</span>
+<span class="lang-content" data-lang="zh">具有文化敏感性培训的多语言支持团队</span>
+<span class="lang-content" data-lang="ms">Pasukan sokongan berbilang bahasa dengan latihan kepekaan budaya</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="mini-faq-section">
+<div class="container">
+<h3 class="mini-faq-title">
+<span class="lang-content active" data-lang="en">🔍 Quick Answers</span>
+<span class="lang-content" data-lang="zh">🔍 快速解答</span>
+<span class="lang-content" data-lang="ms">🔍 Jawapan Pantas</span>
+</h3>
+<div class="mini-faq-grid">
+<div class="mini-faq-item">
+<div class="faq-question-mini">
+<span class="lang-content active" data-lang="en">💰 High investment cost?</span>
+<span class="lang-content" data-lang="zh">💰 投资成本高吗？</span>
+<span class="lang-content" data-lang="ms">💰 Kos pelaburan tinggi?</span>
+</div>
+<div class="faq-answer-mini">
+<span class="lang-content active" data-lang="en">Government covers 60-70%, actual cost ~MYR 225K</span>
+<span class="lang-content" data-lang="zh">政府补贴60-70%，实际成本约MYR 225K</span>
+<span class="lang-content" data-lang="ms">Kerajaan menanggung 60-70%, kos sebenar ~RM225K</span>
+</div>
+</div>
+<div class="mini-faq-item">
+<div class="faq-question-mini">
+<span class="lang-content active" data-lang="en">🏭 Suitable for my industry?</span>
+<span class="lang-content" data-lang="zh">🏭 适合我的行业吗？</span>
+<span class="lang-content" data-lang="ms">🏭 Sesuai untuk industri saya?</span>
+</div>
+<div class="faq-answer-mini">
+<span class="lang-content active" data-lang="en">Automotive, electronics, machinery - 98% SME compatibility</span>
+<span class="lang-content" data-lang="zh">汽车、电子、机械 - 98%中小企业兼容性</span>
+<span class="lang-content" data-lang="ms">Automotif, elektronik, jentera - 98% keserasian IKS</span>
+</div>
+</div>
+<div class="mini-faq-item">
+<div class="faq-question-mini">
+<span class="lang-content active" data-lang="en">⏱️ How long to see results?</span>
+<span class="lang-content" data-lang="zh">⏱️ 多久能看到效果？</span>
+<span class="lang-content" data-lang="ms">⏱️ Berapa lama nampak hasil?</span>
+</div>
+<div class="faq-answer-mini">
+<span class="lang-content active" data-lang="en">17-month payback, immediate efficiency gains</span>
+<span class="lang-content" data-lang="zh">17个月回本，立即的效率提升</span>
+<span class="lang-content" data-lang="ms">17 bulan pulang modal, kecekapan segera</span>
+</div>
+</div>
+<div class="mini-faq-item">
+<div class="faq-question-mini">
+<span class="lang-content active" data-lang="en">🛠️ Replace existing systems?</span>
+<span class="lang-content" data-lang="zh">🛠️ 替换现有系统？</span>
+<span class="lang-content" data-lang="ms">🛠️ Ganti sistem sedia ada?</span>
+</div>
+<div class="faq-answer-mini">
+<span class="lang-content active" data-lang="en">No! Works with 2000s systems, zero forced upgrades</span>
+<span class="lang-content" data-lang="zh">不！与2000年代系统兼容，零强制升级</span>
+<span class="lang-content" data-lang="ms">Tidak! Berfungsi dengan sistem 2000an, tiada naik taraf paksa</span>
+</div>
+</div>
+<div class="mini-faq-item">
+<div class="faq-question-mini">
+<span class="lang-content active" data-lang="en">👥 Staff training needed?</span>
+<span class="lang-content" data-lang="zh">👥 需要员工培训吗？</span>
+<span class="lang-content" data-lang="ms">👥 Perlukan latihan kakitangan?</span>
+</div>
+<div class="faq-answer-mini">
+<span class="lang-content active" data-lang="en">1-week trilingual training, cultural-sensitive approach</span>
+<span class="lang-content" data-lang="zh">1周三语培训，文化敏感方法</span>
+<span class="lang-content" data-lang="ms">Latihan 3 bahasa 1 minggu, pendekatan sensitif budaya</span>
+</div>
+</div>
+</div>
+</div>
+</section><!-- ==================== ⑥ App版本计划展示 ==================== -->
+<section class="roadmap-section">
+<div class="container">
+<h2 class="section-title">
+<span class="lang-content active" data-lang="en">🎁 SmartFlow AI Roadmap</span>
+<span class="lang-content" data-lang="zh">🎁 SmartFlow AI路线图</span>
+<span class="lang-content" data-lang="ms">🎁 Peta Jalan SmartFlow AI</span>
+</h2>
+<div class="roadmap-container">
+<div class="version-card current">
+<div class="version-header">
+<span class="version-badge current">✅ Current v2.1</span>
+<h3>
+<span class="lang-content active" data-lang="en">Live &amp; Running</span>
+<span class="lang-content" data-lang="zh">当前运行版本</span>
+<span class="lang-content" data-lang="ms">Versi Semasa</span>
+</h3>
+</div>
+<div class="version-features">
+<div class="feature-item">📊 Real-time ROI Calculator</div>
+<div class="feature-item">🔍 Smart Content Search</div>
+<div class="feature-item">🌐 Trilingual Navigation</div>
+<div class="feature-item">💬 AI Assistant Chat</div>
+<div class="feature-item">🎮 Interactive 3D Demo</div>
+<div class="feature-item">📱 Progressive Web App</div>
+</div>
+</div>
+<div class="version-card upcoming">
+<div class="version-header">
+<span class="version-badge upcoming">🔜 Coming v3.0</span>
+<h3>
+<span class="lang-content active" data-lang="en">Next Quarter</span>
+<span class="lang-content" data-lang="zh">下个季度</span>
+<span class="lang-content" data-lang="ms">Suku Seterusnya</span>
+</h3>
+</div>
+<div class="version-features">
+<div class="feature-item">👤 User Login &amp; Profiles</div>
+<div class="feature-item">📤 Data Export Tools</div>
+<div class="feature-item">🏛️ Government Grant Simulator</div>
+<div class="feature-item">📋 Custom Report Builder</div>
+<div class="feature-item">🔔 Real-time Notifications</div>
+<div class="feature-item">💾 Offline Mode Support</div>
+</div>
+</div>
+<div class="version-card future">
+<div class="version-header">
+<span class="version-badge future">🚀 Future v4.0</span>
+<h3>
+<span class="lang-content active" data-lang="en">Vision 2025</span>
+<span class="lang-content" data-lang="zh">2025愿景</span>
+<span class="lang-content" data-lang="ms">Visi 2025</span>
+</h3>
+</div>
+<div class="version-features">
+<div class="feature-item">🤖 Advanced AI Predictions</div>
+<div class="feature-item">🏭 AR Factory Integration</div>
+<div class="feature-item">🌍 Regional Market Analysis</div>
+<div class="feature-item">📊 Predictive Analytics</div>
+<div class="feature-item">🔗 ERP System Integration</div>
+<div class="feature-item">🎯 Industry-specific AI Models</div>
+</div>
+</div>
+</div>
+<div class="roadmap-cta">
+<p>
+<span class="lang-content active" data-lang="en">🔥 Want early access to new features? Join our beta program!</span>
+<span class="lang-content" data-lang="zh">🔥 想要提前体验新功能？加入我们的测试项目！</span>
+<span class="lang-content" data-lang="ms">🔥 Mahu akses awal kepada ciri baharu? Sertai program beta kami!</span>
+</p>
+<button class="roadmap-cta-btn" onclick="showBetaSignup()">
+<span class="lang-content active" data-lang="en">Join Beta Program</span>
+<span class="lang-content" data-lang="zh">加入测试项目</span>
+<span class="lang-content" data-lang="ms">Sertai Program Beta</span>
+</button>
+</div>
+</div>
 </section>
+<style>
+/* ⑥ 路线图样式 */
+.roadmap-section {
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    color: white;
+    padding: 80px 0;
+}
+
+.roadmap-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.version-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.version-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.version-card.current {
+    border-color: #10b981;
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.version-card.upcoming {
+    border-color: #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.version-card.future {
+    border-color: #8b5cf6;
+    background: rgba(139, 92, 246, 0.1);
+}
+
+.version-header {
+    margin-bottom: 20px;
+}
+
+.version-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.version-badge.current {
+    background: #10b981;
+    color: white;
+}
+
+.version-badge.upcoming {
+    background: #f59e0b;
+    color: white;
+}
+
+.version-badge.future {
+    background: #8b5cf6;
+    color: white;
+}
+
+.version-header h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.version-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.roadmap-cta {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+}
+
+.roadmap-cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.roadmap-cta-btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.roadmap-cta-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+    .roadmap-container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+<script>
+// ⑥ Beta注册功能
+function showBetaSignup() {
+    const email = prompt(`🚀 Join SmartFlow AI Beta Program\n\nGet early access to:\n• User Profiles & Data Export\n• Government Grant Simulator\n• Advanced AI Features\n\nEnter your email:`);
+    
+    if (email && email.includes('@')) {
+        showNotification(`🎉 Welcome to Beta! Confirmation sent to ${email}`, 'success');
+        
+        setTimeout(() => {
+            alert(`🔥 Beta Access Confirmed!\n\nWelcome to SmartFlow AI Beta Program!\n\nNext Steps:\n• Beta portal link sent to ${email}\n• Early access starts next month\n• Exclusive beta features preview\n\nThank you for being an early adopter! 🚀`);
+        }, 2000);
+    } else if (email) {
+        alert('Please enter a valid email address.');
+    }
+}
+
+// 版本卡片点击效果
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.version-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const version = this.querySelector('.version-badge').textContent;
+            showNotification(`📋 ${version} details viewed`, 'success');
+        });
+    });
+});
+</script>
 <!-- Enhanced Contact Section -->
 <section class="contact-section" id="contact">
 <div class="container">
@@ -4465,5 +5007,1026 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 <div class="search-results" id="searchResults">
 <!-- 搜索结果将在这里显示 -->
-</div><div class="expanded-feature">这是一个新加入的功能区域，用于展示更多信息或交互。</div></body>
+</div>
+<!-- ==================== 1. 移动端悬浮按钮和菜单 ====================
+     添加位置：在 </body> 标签之前 -->
+<!-- 移动端悬浮按钮 - 主功能入口 -->
+<div class="mobile-fab" onclick="toggleMobileMenu()" title="Open SmartFlow AI Tools">
+<span>⚡</span>
+</div>
+<!-- 移动功能菜单 -->
+<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu-item" onclick="openDashboard()">
+<span>📊</span>
+<span class="lang-content active" data-lang="en">Live Dashboard</span>
+<span class="lang-content" data-lang="zh">实时仪表板</span>
+<span class="lang-content" data-lang="ms">Papan Pemuka Langsung</span>
+</div>
+<div class="mobile-menu-item" onclick="toggleAIChat()">
+<span>🤖</span>
+<span class="lang-content active" data-lang="en">AI Assistant</span>
+<span class="lang-content" data-lang="zh">AI助手</span>
+<span class="lang-content" data-lang="ms">Pembantu AI</span>
+</div>
+<div class="mobile-menu-item" onclick="toggle3DDemo()">
+<span>🎮</span>
+<span class="lang-content active" data-lang="en">3D Demo</span>
+<span class="lang-content" data-lang="zh">3D演示</span>
+<span class="lang-content" data-lang="ms">Demo 3D</span>
+</div>
+<div class="mobile-menu-item" onclick="generateReport()">
+<span>📋</span>
+<span class="lang-content active" data-lang="en">Generate Report</span>
+<span class="lang-content" data-lang="zh">生成报告</span>
+<span class="lang-content" data-lang="ms">Jana Laporan</span>
+</div>
+<div class="mobile-menu-item" onclick="openSearch()">
+<span>🔍</span>
+<span class="lang-content active" data-lang="en">Smart Search</span>
+<span class="lang-content" data-lang="zh">智能搜索</span>
+<span class="lang-content" data-lang="ms">Carian Pintar</span>
+</div>
+<div class="mobile-menu-item" onclick="openBookmarks()">
+<span>📑</span>
+<span class="lang-content active" data-lang="en">Bookmarks</span>
+<span class="lang-content" data-lang="zh">书签</span>
+<span class="lang-content" data-lang="ms">Tandabuku</span>
+</div>
+<div class="mobile-menu-item" onclick="openROICalculator()">
+<span>💰</span>
+<span class="lang-content active" data-lang="en">ROI Calculator</span>
+<span class="lang-content" data-lang="zh">ROI计算器</span>
+<span class="lang-content" data-lang="ms">Kalkulator ROI</span>
+</div>
+</div>
+<!-- 中略（为避免重复） -->
+<!-- 此处可继续补入完整的功能代码，或已在另一个片段中保存 -->
+<div class="search-overlay" id="searchOverlay" onclick="closeSearch(event)">
+<div class="search-container" onclick="event.stopPropagation()">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+<h3 style="margin: 0; color: #667eea; font-size: 24px; font-weight: 700;">
+<span>🔍</span> Smart Search
+                </h3>
+<button onclick="closeSearch()" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #6b7280;">×</button>
+</div>
+<input class="search-input" id="searchInput" onkeyup="performSearch()" placeholder="Search..." type="text"/>
+<div class="search-results" id="searchResults"></div>
+</div>
+</div>
+<div class="search-overlay" id="roiCalculatorOverlay" onclick="closeROICalculator(event)">
+<div class="search-container" onclick="event.stopPropagation()">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+<h3 style="margin: 0; color: #667eea; font-size: 24px; font-weight: 700;">
+<span>💰</span> ROI Calculator
+                </h3>
+<button onclick="closeROICalculator()" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #6b7280;">×</button>
+</div>
+<div class="roi-calculator">
+<input id="currentHours" oninput="calculateROI()" type="number" value="720"/>
+<input id="hourlyCost" oninput="calculateROI()" type="number" value="85"/>
+<input id="reworkIncidents" oninput="calculateROI()" type="number" value="15"/>
+<div id="roiResult"></div>
+</div>
+</div>
+</div>
+<script>
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('active');
+}
+</script>
+<!-- Bookmark Panel -->
+<div class="bookmark-panel" id="bookmarkPanel" style="display:none; position:fixed; right:20px; bottom:80px; background:white; border:1px solid #ccc; padding:20px; border-radius:10px; z-index:9999;">
+<h4>📑 Bookmarks</h4>
+<div class="bookmark-item" onclick="scrollToSection('features')">AI Features</div>
+<div class="bookmark-item" onclick="scrollToSection('pricing')">Pricing Info</div>
+<div class="bookmark-item" onclick="scrollToSection('team')">Expert Team</div>
+</div>
+<script>
+// Smart Search
+function openSearch() {
+    const overlay = document.getElementById('searchOverlay');
+    if (overlay) overlay.style.display = 'flex';
+}
+function closeSearch(event) {
+    if (!event || event.target.id === 'searchOverlay') {
+        document.getElementById('searchOverlay').style.display = 'none';
+    }
+}
+
+// Bookmarks
+function openBookmarks() {
+    const panel = document.getElementById('bookmarkPanel');
+    if (panel) panel.style.display = 'block';
+}
+function closeBookmarks() {
+    const panel = document.getElementById('bookmarkPanel');
+    if (panel) panel.style.display = 'none';
+}
+
+// ROI Calculator
+function openROICalculator() {
+    const overlay = document.getElementById('roiCalculatorOverlay');
+    if (overlay) overlay.style.display = 'flex';
+}
+function closeROICalculator(event) {
+    if (!event || event.target.id === 'roiCalculatorOverlay') {
+        document.getElementById('roiCalculatorOverlay').style.display = 'none';
+    }
+}
+
+// Scroll to section
+function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+<!-- ==================== ② 增强版引导页/弹窗说明 ==================== -->
+<div class="onboarding-overlay" id="onboardingOverlay" onclick="closeOnboarding(event)">
+<div class="onboarding-container" onclick="event.stopPropagation()">
+<div class="onboarding-header">
+<h2>🚀 欢迎使用 SmartFlow AI App</h2>
+<button class="close-btn" onclick="closeOnboarding()">×</button>
+</div>
+<div class="onboarding-content">
+<div class="onboarding-slide active" data-slide="0">
+<div class="slide-icon">🏭</div>
+<h3>
+<span class="lang-content active" data-lang="en">Revolutionary Manufacturing AI</span>
+<span class="lang-content" data-lang="zh">革命性制造业AI</span>
+<span class="lang-content" data-lang="ms">AI Pembuatan Revolusioner</span>
+</h3>
+<p>
+<span class="lang-content active" data-lang="en">Reduce design change cycles from 48 to 8 hours with cultural intelligence</span>
+<span class="lang-content" data-lang="zh">通过文化智能将设计变更周期从48小时缩短至8小时</span>
+<span class="lang-content" data-lang="ms">Kurangkan kitaran perubahan reka bentuk dari 48 ke 8 jam dengan kecerdasan budaya</span>
+</p>
+</div>
+<div class="onboarding-slide" data-slide="1">
+<div class="slide-icon">⚡</div>
+<h3>
+<span class="lang-content active" data-lang="en">Key Features at Your Fingertips</span>
+<span class="lang-content" data-lang="zh">核心功能触手可及</span>
+<span class="lang-content" data-lang="ms">Ciri Utama di Hujung Jari</span>
+</h3>
+<div class="feature-highlights">
+<div class="highlight-item">📊 Live Dashboard</div>
+<div class="highlight-item">🤖 AI Assistant</div>
+<div class="highlight-item">💰 ROI Calculator</div>
+<div class="highlight-item">🎮 3D Demo</div>
+</div>
+</div>
+<div class="onboarding-slide" data-slide="2">
+<div class="slide-icon">🏛️</div>
+<h3>
+<span class="lang-content active" data-lang="en">Government Partnership</span>
+<span class="lang-content" data-lang="zh">政府合作伙伴</span>
+<span class="lang-content" data-lang="ms">Perkongsian Kerajaan</span>
+</h3>
+<p>
+<span class="lang-content active" data-lang="en">60-70% funding coverage from Ministry of Digital Malaysia</span>
+<span class="lang-content" data-lang="zh">马来西亚数字部提供60-70%资金支持</span>
+<span class="lang-content" data-lang="ms">60-70% liputan pembiayaan dari Kementerian Digital Malaysia</span>
+</p>
+</div>
+</div>
+<div class="onboarding-navigation">
+<div class="slide-indicators">
+<span class="indicator active" data-slide="0"></span>
+<span class="indicator" data-slide="1"></span>
+<span class="indicator" data-slide="2"></span>
+</div>
+<div class="nav-buttons">
+<button class="nav-btn prev" onclick="previousSlide()">‹ Prev</button>
+<button class="nav-btn next" onclick="nextSlide()">Next ›</button>
+<button class="nav-btn start" onclick="closeOnboarding()" style="display: none;">Start Using App</button>
+</div>
+</div>
+</div>
+</div>
+<style>
+/* ② 增强版引导页样式 */
+.onboarding-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.onboarding-container {
+    background: white;
+    border-radius: 24px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.onboarding-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.onboarding-header h2 {
+    color: #667eea;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #6b7280;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #667eea;
+    transform: scale(1.1);
+}
+
+.onboarding-content {
+    padding: 30px;
+    min-height: 300px;
+    position: relative;
+}
+
+.onboarding-slide {
+    display: none;
+    text-align: center;
+    animation: slideIn 0.5s ease;
+}
+
+.onboarding-slide.active {
+    display: block;
+}
+
+.slide-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.onboarding-slide h3 {
+    color: #1f2937;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.onboarding-slide p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.feature-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.highlight-item {
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #374151;
+    font-size: 14px;
+}
+
+.onboarding-navigation {
+    padding: 20px 30px 30px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.slide-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: #667eea;
+    transform: scale(1.2);
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.nav-btn {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #667eea;
+    border-radius: 12px;
+    background: transparent;
+    color: #667eea;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover, .nav-btn.start {
+    background: #667eea;
+    color: white;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .onboarding-container {
+        margin: 20px;
+        max-width: none;
+    }
+    
+    .feature-highlights {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+<script>
+// ② 引导页功能
+let currentSlide = 0;
+const totalSlides = 3;
+
+function showOnboarding() {
+    const shown = localStorage.getItem('smartflow-onboarding-shown');
+    if (!shown) {
+        document.getElementById('onboardingOverlay').style.display = 'flex';
+        localStorage.setItem('smartflow-onboarding-shown', 'true');
+    }
+}
+
+function closeOnboarding(event) {
+    if (!event || event.target.id === 'onboardingOverlay') {
+        document.getElementById('onboardingOverlay').style.display = 'none';
+    }
+}
+
+function nextSlide() {
+    if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        updateSlide();
+    }
+}
+
+function previousSlide() {
+    if (currentSlide > 0) {
+        currentSlide--;
+        updateSlide();
+    }
+}
+
+function updateSlide() {
+    // 隐藏所有slides
+    document.querySelectorAll('.onboarding-slide').forEach(slide => {
+        slide.classList.remove('active');
+    });
+    
+    // 显示当前slide
+    document.querySelector(`[data-slide="${currentSlide}"]`).classList.add('active');
+    
+    // 更新指示器
+    document.querySelectorAll('.indicator').forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentSlide);
+    });
+    
+    // 更新按钮状态
+    const prevBtn = document.querySelector('.nav-btn.prev');
+    const nextBtn = document.querySelector('.nav-btn.next');
+    const startBtn = document.querySelector('.nav-btn.start');
+    
+    prevBtn.style.display = currentSlide === 0 ? 'none' : 'block';
+    
+    if (currentSlide === totalSlides - 1) {
+        nextBtn.style.display = 'none';
+        startBtn.style.display = 'block';
+    } else {
+        nextBtn.style.display = 'block';
+        startBtn.style.display = 'none';
+    }
+}
+
+// 点击指示器跳转
+document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('indicator')) {
+        currentSlide = parseInt(e.target.dataset.slide);
+        updateSlide();
+    }
+});
+
+// 页面加载完成后初始化
+document.addEventListener('DOMContentLoaded', function() {
+    // 延迟显示引导页
+    setTimeout(showOnboarding, 2000);
+    updateSlide();
+});
+</script>
+<script>
+  window.addEventListener("load", function() {
+    const el = document.getElementById('onboardingOverlay');
+    if (el) el.style.display = 'flex';
+  });
+</script>
+<!-- ==================== ③ 页面内Tab切换模块 ==================== -->
+<style>
+/* ③ Tab切换模块样式 */
+.app-tabs-section {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    padding: 80px 0;
+}
+
+.tab-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 40px 0;
+    background: white;
+    padding: 8px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+}
+
+.tab-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 20px;
+    border: none;
+    background: transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 100px;
+    flex: 1;
+}
+
+.tab-btn.active {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.tab-icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.tab-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tab-content-container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    min-height: 300px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.content-card {
+    background: linear-gradient(135deg, #f8fafc, #ffffff);
+    padding: 30px;
+    border-radius: 16px;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    border-color: #667eea;
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.15);
+}
+
+.content-card h4 {
+    color: #667eea;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.roi-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.roi-metric {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.metric-value {
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.metric-label {
+    font-size: 14px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.implementation-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.step-content h5 {
+    color: #1f2937;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.step-content p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.support-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.support-card {
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+    padding: 30px;
+    border-radius: 16px;
+    border-left: 4px solid #667eea;
+}
+
+.support-card h4 {
+    color: #667eea;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .tab-switcher {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+    
+    .tab-btn {
+        min-width: 80px;
+        flex: none;
+    }
+    
+    .tab-content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .roi-showcase {
+        grid-template-columns: 1fr;
+    }
+    
+    .support-options {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+<script>
+// ③ Tab切换功能
+function switchTab(tabName) {
+    // 移除所有active状态
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+    });
+    
+    // 添加active状态
+    document.querySelector(`[onclick*="${tabName}"]`).classList.add('active');
+    document.getElementById(`tab-${tabName}`).classList.add('active');
+    
+    // 显示通知
+    const tabNames = {
+        features: { en: 'Features Overview', zh: '功能概览', ms: 'Gambaran Ciri' },
+        roi: { en: 'ROI Analysis', zh: 'ROI分析', ms: 'Analisis ROI' },
+        implementation: { en: 'Implementation Plan', zh: '实施计划', ms: 'Rancangan Pelaksanaan' },
+        support: { en: 'Support Options', zh: '支持选项', ms: 'Pilihan Sokongan' }
+    };
+    
+    const currentLang = document.querySelector('.lang-btn.active').textContent.toLowerCase();
+    let langKey = 'en';
+    if (currentLang === '中文') langKey = 'zh';
+    if (currentLang === 'bm') langKey = 'ms';
+    
+    showNotification(`📋 ${tabNames[tabName][langKey]} loaded`, 'success');
+}
+</script><!-- ==================== ④ 留言/反馈表单 ==================== -->
+<section class="feedback-section">
+<div class="container">
+<div class="feedback-trigger" onclick="toggleFeedbackForm()">
+<span class="feedback-icon">💬</span>
+<span class="feedback-text">
+<span class="lang-content active" data-lang="en">Share Your Feedback</span>
+<span class="lang-content" data-lang="zh">分享您的反馈</span>
+<span class="lang-content" data-lang="ms">Kongsi Maklum Balas Anda</span>
+</span>
+</div>
+<div class="feedback-form-container" id="feedbackForm">
+<div class="feedback-header">
+<h3>
+<span class="lang-content active" data-lang="en">🎯 What interests you most?</span>
+<span class="lang-content" data-lang="zh">🎯 您最感兴趣的是什么？</span>
+<span class="lang-content" data-lang="ms">🎯 Apa yang paling menarik minat anda?</span>
+</h3>
+<button class="close-feedback" onclick="toggleFeedbackForm()">×</button>
+</div>
+<form class="quick-feedback-form" onsubmit="submitFeedback(event)">
+<div class="interest-options">
+<label class="option-card">
+<input name="interests" type="checkbox" value="roi"/>
+<span class="option-content">
+<span class="option-icon">💰</span>
+<span class="option-text">
+<span class="lang-content active" data-lang="en">ROI &amp; Cost Savings</span>
+<span class="lang-content" data-lang="zh">投资回报和成本节省</span>
+<span class="lang-content" data-lang="ms">ROI &amp; Penjimatan Kos</span>
+</span>
+</span>
+</label>
+<label class="option-card">
+<input name="interests" type="checkbox" value="cultural"/>
+<span class="option-content">
+<span class="option-icon">🌍</span>
+<span class="option-text">
+<span class="lang-content active" data-lang="en">Cultural Intelligence</span>
+<span class="lang-content" data-lang="zh">文化智能</span>
+<span class="lang-content" data-lang="ms">Kecerdasan Budaya</span>
+</span>
+</span>
+</label>
+<label class="option-card">
+<input name="interests" type="checkbox" value="government"/>
+<span class="option-content">
+<span class="option-icon">🏛️</span>
+<span class="option-text">
+<span class="lang-content active" data-lang="en">Government Funding</span>
+<span class="lang-content" data-lang="zh">政府资助</span>
+<span class="lang-content" data-lang="ms">Pembiayaan Kerajaan</span>
+</span>
+</span>
+</label>
+<label class="option-card">
+<input name="interests" type="checkbox" value="implementation"/>
+<span class="option-content">
+<span class="option-icon">🚀</span>
+<span class="option-text">
+<span class="lang-content active" data-lang="en">Implementation Process</span>
+<span class="lang-content" data-lang="zh">实施流程</span>
+<span class="lang-content" data-lang="ms">Proses Pelaksanaan</span>
+</span>
+</span>
+</label>
+</div>
+<div class="feedback-input-group">
+<textarea class="feedback-textarea" name="comments" placeholder="Any specific questions or concerns? (Optional)" rows="3"></textarea>
+<input class="feedback-email" name="email" placeholder="Email (Optional - for follow-up)" type="email"/>
+</div>
+<button class="submit-feedback-btn" type="submit">
+<span class="lang-content active" data-lang="en">Submit Feedback</span>
+<span class="lang-content" data-lang="zh">提交反馈</span>
+<span class="lang-content" data-lang="ms">Hantar Maklum Balas</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<style>
+/* ④ 反馈表单样式 */
+.feedback-section {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1005;
+}
+
+.feedback-trigger {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    padding: 16px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.feedback-trigger:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(16, 185, 129, 0.6);
+}
+
+.feedback-icon {
+    font-size: 20px;
+}
+
+.feedback-form-container {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    background: white;
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    width: 400px;
+    max-height: 600px;
+    overflow-y: auto;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform-origin: bottom left;
+}
+
+.feedback-form-container.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.feedback-header h3 {
+    color: #1f2937;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.close-feedback {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+.quick-feedback-form {
+    padding: 25px;
+}
+
+.interest-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.option-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-card input[type="checkbox"] {
+    display: none;
+}
+
+.option-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.option-card:hover .option-content {
+    border-color: #667eea;
+    transform: translateY(-2px);
+}
+
+.option-card input:checked + .option-content {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-color: #667eea;
+}
+
+.option-icon {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.option-text {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.feedback-input-group {
+    margin-bottom: 20px;
+}
+
+.feedback-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    resize: vertical;
+    font-family: inherit;
+    margin-bottom: 12px;
+}
+
+.feedback-email {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.feedback-textarea:focus,
+.feedback-email:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.submit-feedback-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-feedback-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+    .feedback-form-container {
+        width: 320px;
+    }
+    
+    .interest-options {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+<script>
+// ④ 反馈表单功能
+function toggleFeedbackForm() {
+    const form = document.getElementById('feedbackForm');
+    form.classList.toggle('active');
+}
+
+function submitFeedback(event) {
+    event.preventDefault();
+    
+    const form = event.target;
+    const formData = new FormData(form);
+    
+    // 收集选中的兴趣点
+    const interests = [];
+    document.querySelectorAll('input[name="interests"]:checked').forEach(checkbox => {
+        interests.push(checkbox.value);
+    });
+    
+    const comments = formData.get('comments') || '';
+    const email = formData.get('email') || '';
+    
+    // 模拟提交
+    const submitBtn = form.querySelector('.submit-feedback-btn');
+    const originalText = submitBtn.textContent;
+    
+    submitBtn.textContent = 'Submitting...';
+    submitBtn.disabled = true;
+    
+    setTimeout(() => {
+        // 生成反馈摘要
+        let feedbackSummary = `🎯 Interests: ${interests.join(', ')}`;
+        if (comments) feedbackSummary += `\n💬 Comments: ${comments}`;
+        if (email) feedbackSummary += `\n📧 Contact: ${email}`;
+        
+        alert(`✅ Feedback submitted successfully!\n\n${feedbackSummary}\n\nThank you! We'll use this to improve SmartFlow AI.`);
+        
+        // 重置表单
+        form.reset();
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+        toggleFeedbackForm();
+        
+        showNotification('💬 Feedback submitted successfully!', 'success');
+    }, 1500);
+}
+</script></body>
 </html>
